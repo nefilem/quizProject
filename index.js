@@ -13,8 +13,8 @@ function setupIntroPage()
     let displayCardObj = document.getElementById("displayCard");
     let displayCardHeaderObj = document.getElementById("displayCardHeader");
     let displayCardBodyObj = document.getElementById("displayCardBody");
-    displayCardHeaderObj.innerHTML = "What is this quiz for?";
-    displayCardBodyObj.innerHTML = '<div class="text-justify">This is a quiz that is intended to determine your personality based on five questions, each question will have one of five answers, choose one and a weight is applied to each one, at the end of the quiz the total weighting for the quiz determines your personality type.</div><br><br><div class="text-center"><button type="button" class="btn btn-success" onclick="startQuiz();">Start Quiz</button></div>';
+    displayCardHeaderObj.innerHTML = "Which XMen/person are you...?";
+    displayCardBodyObj.innerHTML = '<div class="text-justify">This is a quiz that is intended to determine your personality based on five questions, each question will have one of five answers, choose one of the answers for each question and click the submit button, after the five questions you will find out which XMen/person you are!.</div><br><br><div class="text-center"><button type="button" class="btn btn-success" onclick="startQuiz();">Start Quiz</button></div>';
 }
 
 function startQuiz()
