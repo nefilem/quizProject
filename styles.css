@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+}
+/*.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+}*/
+#displayCard {
+    border: auto 0 auto 0;
+    width: 600px;
+    height: 600px;
+}
+
+/* rotate image */
+
+@keyframes r {
+    from {
+      transform: rotate(0deg);
+    }
+   
+    to {
+      transform: rotate(360deg);
+    }
+  }
+   
+  @keyframes r1 {
+    from {
+      transform: rotate(360deg);
+    }
+   
+    to {
+      transform: rotate(0deg);
+    }
+  }
+   
+  .rotate_img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 100%;
+    top: 30%;
+    left: 25%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    border: 1px solid #ccc;
+   
+    animation-name: r;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+   
+  .rotate_img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    animation-name: r1;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
